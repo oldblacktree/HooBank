@@ -1,8 +1,4 @@
-import {
-  Navbar,
-  Hero,
-  Stats
-} from './components';
+import { Navbar, Hero, Stats, Business} from './components';
 
 const App = () => {
   return (
@@ -16,6 +12,7 @@ const App = () => {
       <div className="px-6 sm:px-16 flex justify-center items-center">
         <div className="xl:max-w-[1280px] w-full">
           <Stats />
+          <Business />
         </div>
       </div>
     </div>
