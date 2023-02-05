@@ -2,10 +2,10 @@ import { useState } from 'react';
 import {logo, menu, close} from '../assets';
 
 const Navbar = () => {
-  const [isMenuOpen, toggleMenu] = useState(false)  
+  const [isMenuOpen, toggleMenu] = useState(false);
 
   return (
-  <nav className='flex py-6 items-center w-full relative'>
+  <nav className='flex items-center w-full relative py-6'>
     <img src={logo} alt="hoobank logo" className='w-[124px] h-[32px]'/>
     <ul className="list-none hidden sm:flex flex-1 justify-end font-poppins text-white text-base gap-10">
       <li>
