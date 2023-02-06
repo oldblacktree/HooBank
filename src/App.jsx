@@ -1,4 +1,4 @@
-import { Navbar, Hero, Stats, Business} from './components';
+import { Navbar, Hero, Stats, Business, Billing} from './components';
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
         <div className="xl:max-w-[1280px] w-full">
           <Stats />
           <Business />
+          <Billing />
         </div>
       </div>
     </div>
