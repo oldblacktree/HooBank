@@ -5,6 +5,7 @@ import Business  from './Business';
 import Billing from './Billing';
 import CardDeal from './CardDeal';
 import Testimonials from './Testimonials';
+import Clients from './Clients'
 
 
 export {
@@ -14,5 +15,6 @@ export {
   Business,
   Billing,
   CardDeal,
-  Testimonials
+  Testimonials,
+  Clients
 }
