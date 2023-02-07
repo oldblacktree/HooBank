@@ -1,8 +1,8 @@
-import { Navbar, Hero, Stats, Business, Billing, CardDeal} from './components';
+import { Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonials, Clients} from './components';
 
 const App = () => {
   return (
-    <div className="bg-primary min-h-[100vh]">
+    <div className="bg-primary min-h-[100vh] overflow-hidden">
       <div className="px-6 sm:px-16 flex justify-center items-center">
         <div className="xl:max-w-[1280px] w-full"><Navbar /></div>
       </div>
@@ -15,6 +15,8 @@ const App = () => {
           <Business />
           <Billing />
           <CardDeal />
+          <Testimonials />
+          <Clients />
         </div>
       </div>
     </div>

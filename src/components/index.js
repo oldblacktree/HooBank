@@ -3,7 +3,8 @@ import Hero from './Hero';
 import Stats from "./Stats";
 import Business  from './Business';
 import Billing from './Billing';
-import CardDeal from './CardDeal'
+import CardDeal from './CardDeal';
+import Testimonials from './Testimonials';
 
 
 export {
@@ -12,5 +13,6 @@ export {
   Stats,
   Business,
   Billing,
-  CardDeal
+  CardDeal,
+  Testimonials
 }
