@@ -1,30 +1,32 @@
-import style from '../style';
-import {logo} from '../assets';
-import { footerLinks, socialMedia } from '../constants';
+import style from "../style";
+import { logo } from "../assets";
+import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
   <section className="py-6 sm:py-16 mt-6 ">
     <div className="flex flex-col md:flex-row w-full">
       <div className="flex sm:max-md:flex-row sm:max-md:items-center sm:max-md:justify-between flex-col flex-1 mr-10 gap-5">
         <img src={logo} alt="" className="w-[266px] h-[72px] object-contain" />
-        <p className={`${style.paragraph} max-w-[310px]`}>A new way to make the payments easy, reliable and secure.</p>
+        <p className={`${style.paragraph} max-w-[310px]`}>
+          A new way to make the payments easy, reliable and secure.
+        </p>
       </div>
       <div className="flex flex-[1.5] justify-between flex-wrap w-full mt-10 md:mt-0 gap-6">
         {footerLinks.map((footerLink) => (
           <div className="" key={footerLink.title}>
-              <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
-                {footerLink.title}
-              </h4>
-              <ul className="flex flex-col list-none mt-6 gap-3">
-                {footerLink.links.map((link) => (
-                  <li
-                    key={link.name}
-                    className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer"
-                  >
-                    {link.name}
-                  </li>
-                ))}
-              </ul>
+            <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+              {footerLink.title}
+            </h4>
+            <ul className="flex flex-col list-none mt-6 gap-3">
+              {footerLink.links.map((link) => (
+                <li
+                  key={link.name}
+                  className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer"
+                >
+                  {link.name}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
@@ -45,6 +47,6 @@ const Footer = () => (
       </div>
     </div>
   </section>
-)
+);
 
-export default Footer
+export default Footer;

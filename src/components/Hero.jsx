@@ -1,5 +1,5 @@
 import { discount, robot } from "../assets";
-import style from '../style';
+import style from "../style";
 import GetStarted from "./GetStarted";
 
 const Hero = () => (
@@ -26,10 +26,18 @@ const Hero = () => (
           </div>
         </div>
       </div>
-      <p className={`${style.paragraph} max-w-[470px] mt-10`}>Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.</p>
+      <p className={`${style.paragraph} max-w-[470px] mt-10`}>
+        Our team of experts uses a methodology to identify the credit cards most
+        likely to fit your needs. We examine annual percentage rates, annual
+        fees.
+      </p>
     </div>
     <div className="my-10 md:ny-0 flex flex-1 relative">
-      <img src={robot} alt="billing" className="w-full h-full relative z-[5] object-contain"/>
+      <img
+        src={robot}
+        alt="billing"
+        className="w-full h-full relative z-[5] object-contain"
+      />
       <div className="absolute z-[0] w-[40%] h-[35%] top-0 billing-pink-gradient" />
       <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 billing-white-gradient" />
       <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 billing-blue-gradient" />
@@ -37,8 +45,7 @@ const Hero = () => (
     <div className=" flex ss:hidden justify-center">
       <GetStarted />
     </div>
-    
   </section>
-)
+);
 
-export default Hero
+export default Hero;
