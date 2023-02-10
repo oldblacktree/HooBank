@@ -24,7 +24,12 @@ const Navbar = () => {
     <div className="flex flex-1 justify-end items-center sm:hidden">
       <img src={isMenuOpen ? close : menu} alt="menu" className='w-[28px] h-[28px] object-contain'  onClick={() => toggleMenu((prev) => !prev)}/>
       <div className={`${isMenuOpen ? 'flex' : 'hidden'} p-2 bg-black-gradient absolute top-20 right-0 min-w-[140px] rounded-xl sidebar z-[10]`}>
-        <ul className="list-none flex flex-col flex-1 font-poppins text-white text-center text-lg">
+        <ul className="list-none flex flex-col flex-1 font-poppins text-white text-center text-lg"  
+          onClick={(e) => {
+            if(e.target.tagName === "A") {
+              toggleMenu((prev) => !prev)
+            }
+            }}>
           <li>
             <a href="#home" className="block p-5">Home</a>
           </li>
